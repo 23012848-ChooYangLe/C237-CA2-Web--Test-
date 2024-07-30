@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Fitness Tracker App</title>
+    <style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		h1 {
+			color: #00698f;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.tools {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.tool {
+			width: 30%;
+			margin: 20px;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.tool:hover {
+			background-color: #eee;
+		}
+		.tool img {
+			width: 50px;
+			height: 50px;
+			margin: 10px;
+		}
+		.tool h2 {
+			margin-top: 0;
+		}
+		.tool p {
+			font-size: 16px;
+			color: #666;
+		}
+	</style>
+</head>
+<body>
+    <%- include ('partials/navbar.ejs') %>
+    <div class="container">
+        <br>
+        <div style="background-color: aquamarine;">
+            <h1 style="text-align: center;margin-bottom: 0;">Welcome back</h1><br>
+            <p style="text-align: center;margin-top: 0;">Where are you heading to today!</p>
+            </div>
+            <div class="tools">
+                <div class="tool">
+                    <img src="#" alt="Workout">
+                    <h2>Workout</h2>
+                    <p>Ready to start your workout?</p>
+                    <a href="/showRoutine"><button>Go</button></a>
+                </div>
+                <div class="tool">
+                    <img src="#" alt="Exercises">
+                    <h2>List of Exercises</h2>
+                    <p>Interested to explore and try out new exercises?</p>
+                    <a href="/workoutList"><button>Go</button></a>
+                </div>
+                <div class="tool">
+                    <img src="#" alt="Followings">
+                    <h2>Followings</h2>
+                    <p>Expand your social circle and make new gym buddies or check out your current gym buddies recent session?</p>
+                    <a href="/following"><button>Go</button></a>
+                </div>
+                <div class="tool">
+                    <img src="#" alt="Members">
+                    <h2>View Members (only for staff)</h2>
+                    <p>Update/Remove membership.</p>
+                    <a href="/memberPage"><button>Go</button></a>
+                </div>
+            </div>
+    </div>
+    
+
+
+</body>
+</html>
